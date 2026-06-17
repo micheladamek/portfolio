@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volvo Cars — Case Study — Michel Adamek</title>
+  <meta name="description" content="Redesigning how a connected car talks to its driver: over-the-air updates, inbox and notifications in the Volvo Cars app." />
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    try { if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body class="theme-volvo">
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__panel"></div>
+    <div class="loader__content">
+      <span class="loader__name">Volvo Cars</span>
+      <span class="loader__count">00</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo" data-cursor>MA<sup>©︎</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work" data-cursor>Work</a>
+      <a href="about.html" data-cursor>About</a>
+      <a href="index.html#services" data-cursor>Services</a>
+      <a href="index.html#contact" data-cursor>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" aria-label="Toggle light mode" aria-pressed="false" data-cursor></button>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-cursor>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <div class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="index.html#work" data-cursor><span class="menu__index">01</span>Work</a>
+        <a href="about.html" data-cursor><span class="menu__index">02</span>About</a>
+        <a href="index.html#services" data-cursor><span class="menu__index">03</span>Services</a>
+        <a href="index.html#contact" data-cursor><span class="menu__index">04</span>Contact</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+          <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Case hero -->
+    <section class="hero hero--case">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="line-mask"><span class="line">Case Study № 01 — App Experience</span></span></p>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line">VOLVO</span></span>
+          <span class="line-mask"><span class="line">CARS<em class="hero__dot">.</em></span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub"><span class="line-mask"><span class="line">Redesigning how a connected car</span></span><span class="line-mask"><span class="line">talks to its driver.</span></span></p>
+          <div class="hero__meta">
+            <span class="line-mask"><span class="line">Client — Volvo Cars</span></span>
+            <span class="line-mask"><span class="line">Role — UX Design, Communication</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero image -->
+    <figure class="case-figure case-figure--hero" data-reveal>
+      <img src="assets/volvocars/hero.webp" alt="The Volvo Cars app alongside a Volvo electric car" />
+    </figure>
+
+    <!-- Facts -->
+    <section class="case-facts">
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Scope</span>
+        <span class="case-fact__value">OTA Updates · Inbox · Notifications</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Platform</span>
+        <span class="case-fact__value">Volvo Cars App, iOS &amp; Android</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Deliverables</span>
+        <span class="case-fact__value">Shipped UX + Figma Design Toolkit</span>
+      </div>
+    </section>
+
+    <!-- Brief -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Brief</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        Software now reaches a Volvo the way it reaches your phone — over the air. But updating a two-ton computer takes more trust than updating an app. My work focused on every moment the car speaks to its driver.
+      </p>
+      <div class="case-cols">
+        <p data-reveal>The Volvo Cars app is the remote control for the car: it unlocks doors, preheats cabins — and increasingly, delivers the software that makes the car better overnight. Yet the communication around those moments had grown fragmented: updates, messages and notifications each spoke with a different voice.</p>
+        <p data-reveal>The mission was to enhance how drivers interact with Volvo through three connected surfaces — over-the-air updates, the inbox, and notifications — keeping every touchpoint intuitive and unmistakably Volvo. The work was grounded in extensive market research and repeated rounds of user interviews and testing.</p>
+      </div>
+    </section>
+
+    <!-- The work -->
+    <section class="case-section services">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Work</span>
+        <h2 class="section-title" data-reveal>Four moves</h2>
+      </div>
+      <ul class="services__list">
+        <li class="service">
+          <span class="service__index">01</span>
+          <h3 class="service__name">OTA Updates</h3>
+          <p class="service__desc">Simplified how drivers schedule and follow software updates — from release notes to install complete — so a car update feels as effortless as a phone update.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">02</span>
+          <h3 class="service__name">Notifications</h3>
+          <p class="service__desc">Redesigned push notifications so the right message lands at the right moment. Timely, relevant — never noise.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">03</span>
+          <h3 class="service__name">Inbox</h3>
+          <p class="service__desc">Reorganized a flat feed of messages into clear categories — turning the inbox into a place drivers actually read.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">04</span>
+          <h3 class="service__name">Design Toolkit</h3>
+          <p class="service__desc">Built a cohesive, scalable communication toolkit in Figma — reusable components that keep every app designer speaking the same language.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Turning point -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Turning Point</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        Somewhere between the interview rounds and the first usability tests, one thing became clear: drivers didn't distrust updates — they distrusted surprises.
+      </p>
+      <div class="case-cols">
+        <p data-reveal><strong>The insight.</strong> Research kept circling the same tension. An update is good news — better software, new features, a safer car. But delivered at the wrong moment, it reads as an interruption from a two-ton machine you depend on. The problem was never the technology; it was the timing and the tone.</p>
+        <p data-reveal><strong>The decision.</strong> Control moved to the driver. Scheduling became the heart of the OTA experience — pick the moment, see what's changing, follow the install through to complete. The same principle then shaped notifications and the inbox: never speak without a reason, never interrupt without permission.</p>
+      </div>
+    </section>
+
+    <!-- Visuals -->
+    <section class="case-section">
+      <div class="case-grid">
+        <figure class="case-figure" data-reveal>
+          <img src="assets/volvocars/app-flows.webp" alt="Screens from the redesigned Volvo Cars app communication flows" />
+        </figure>
+        <figure class="case-figure" data-reveal>
+          <img src="assets/volvocars/ota-complete.webp" alt="Over-the-air update completed screen in the Volvo Cars app" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Outcome -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Results</span>
+        <h2 class="section-title" data-reveal>Shipped &amp; scaled</h2>
+      </div>
+
+      <div class="case-results" data-reveal>
+        <video class="case-results__video" id="results-video" autoplay muted loop playsinline aria-hidden="true" poster="assets/volvocars/ota-complete.webp">
+          <source src="assets/volvocars/ota.mp4" type="video/mp4" />
+        </video>
+        <ul class="case-outcomes">
+          <li>Led the launch of enhanced OTA updates across multiple Volvo car platforms</li>
+          <li>Elevated car ownership — turning the car into a companion, not just a tool</li>
+          <li>Streamlined the app inbox for clearer, more enjoyable communication</li>
+          <li>Delivered a scalable Figma communication toolkit for designers and developers — engaging, cohesive experiences, shipped faster</li>
+          <li>Strengthened the app as a cornerstone channel for car owners — deeper engagement, higher satisfaction</li>
+        </ul>
+      </div>
+
+      <blockquote class="case-quote" data-reveal>
+        <figure class="case-quote__portrait">
+          <img src="assets/volvocars/rahul.webp" alt="Rahul Lindberg Sen, Head of UX at Volvo Cars" loading="lazy" />
+        </figure>
+        <div class="case-quote__body">
+          <p>"During his time with us Michel worked on communication tooling and experiences within the app space in Volvo Cars. Key experiences that Michel helped evolve were remote software updates (OTA) that enable the car to update over time via the app — critical for the business. Michel also helped explore, define and deliver the earlier versions of a communication toolkit that is now helping scale the app to more internal users in the company. To top that off, Michel was also a fun colleague and team photographer and is missed dearly."</p>
+          <cite>Rahul Lindberg Sen — Head of UX, Volvo Cars</cite>
+        </div>
+      </blockquote>
+    </section>
+
+    <!-- Learnings -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>Looking Back</span>
+        <h2 class="section-title" data-reveal>Three things<br />I keep</h2>
+      </div>
+      <div class="case-learnings">
+        <div class="case-learning" data-reveal>
+          <span class="case-learning__num">01</span>
+          <h3>Trust is a feature</h3>
+          <p>In a car, every message carries the weight of the brand. Communication design isn't a layer on top of the product — it is the product.</p>
+        </div>
+        <div class="case-learning" data-reveal>
+          <span class="case-learning__num">02</span>
+          <h3>Systems outlive screens</h3>
+          <p>The screens shipped and moved on. The toolkit stayed — the most lasting deliverable wasn't an interface, it was what other designers now build with.</p>
+        </div>
+        <div class="case-learning" data-reveal>
+          <span class="case-learning__num">03</span>
+          <h3>Bring engineering in earlier</h3>
+          <p>The best OTA concepts lived or died on platform constraints. The sooner those surfaced, the better the design got — next time, they're in the first workshop.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / next -->
+    <footer class="footer footer--case" id="contact">
+      <span class="section-label" data-reveal>Next up</span>
+      <a href="landshypotek.html" class="footer__cta" data-cursor-label="Next">
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">LANDSHYPOTEK<em>↗︎</em></span></span></span>
+      </a>
+      <div class="footer__bottom">
+        <div class="footer__col">
+          <span class="footer__label">Email</span>
+          <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Socials</span>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+            <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Local time</span>
+          <span class="footer__time" id="clock">--:--</span>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__label">©︎2026</span>
+          <span>Michel Adamek</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script>
+    (function () {
+      var video = document.getElementById("results-video");
+      if (!video) return;
+      if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) { video.removeAttribute("autoplay"); return; }
+      var tryPlay = function () { var p = video.play(); if (p) p.catch(function () {}); };
+      video.addEventListener("loadedmetadata", tryPlay);
+      document.addEventListener("visibilitychange", function () { if (!document.hidden) tryPlay(); });
+    })();
+  </script>
+  <script type="module" src="script.js?v=12"></script>
+</body>
+</html>

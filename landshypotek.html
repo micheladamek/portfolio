@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landshypotek Bank — Case Study — Michel Adamek</title>
+  <meta name="description" content="Modernizing one of Sweden's leading agricultural banks — a new internet bank, a shared design system and internal tools, with WCAG 2.2 AA built into the foundation." />
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    try { if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body class="theme-landshypotek">
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__panel"></div>
+    <div class="loader__content">
+      <span class="loader__name">Landshypotek Bank</span>
+      <span class="loader__count">00</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo" data-cursor>MA<sup>©︎</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work" data-cursor>Work</a>
+      <a href="about.html" data-cursor>About</a>
+      <a href="index.html#services" data-cursor>Services</a>
+      <a href="index.html#contact" data-cursor>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" aria-label="Toggle light mode" aria-pressed="false" data-cursor></button>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-cursor>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <div class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="index.html#work" data-cursor><span class="menu__index">01</span>Work</a>
+        <a href="about.html" data-cursor><span class="menu__index">02</span>About</a>
+        <a href="index.html#services" data-cursor><span class="menu__index">03</span>Services</a>
+        <a href="index.html#contact" data-cursor><span class="menu__index">04</span>Contact</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+          <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Case hero -->
+    <section class="hero hero--case">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="line-mask"><span class="line">Case Study № 02 — Banking</span></span></p>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line">LANDS-</span></span>
+          <span class="line-mask"><span class="line">HYPOTEK<em class="hero__dot">.</em></span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub"><span class="line-mask"><span class="line">Modernizing a 188-year-old bank —</span></span><span class="line-mask"><span class="line">accessible by design, not by patch.</span></span></p>
+          <div class="hero__meta">
+            <span class="line-mask"><span class="line">Client — Landshypotek Bank</span></span>
+            <span class="line-mask"><span class="line">Role — UX, UI &amp; Design Systems</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero image -->
+    <figure class="case-figure case-figure--hero" data-reveal>
+      <img src="assets/landshypotek/hero.jpg" alt="The Landshypotek internet bank on laptop and phone, set in a wheat field" />
+    </figure>
+
+    <!-- Facts -->
+    <section class="case-facts">
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Scope</span>
+        <span class="case-fact__value">Internet Bank · Design System · Internal Tools</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Client</span>
+        <span class="case-fact__value">Sweden's leading agricultural bank, member-owned</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Standard</span>
+        <span class="case-fact__value">WCAG 2.2 AA — throughout, by default</span>
+      </div>
+    </section>
+
+    <!-- Brief -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Brief</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        A bank rooted in Swedish farming and forestry, bringing its digital home up to date — with accessibility built into the foundation, not bolted on at the end.
+      </p>
+      <div class="case-cols">
+        <p data-reveal>Landshypotek Bank is one of Sweden's leading agricultural banks — cooperatively owned by its borrowers, with roots deep in the country's farming and forestry. Antrop was tasked with modernizing the internet bank, building a shared design system, and designing several internal tools, with WCAG 2.2 AA accessibility as a requirement running through all of it.</p>
+        <p data-reveal>The work spanned the whole delivery chain. It began with research and business analysis — studying existing usage, benchmarking against other banks, and reviewing the bank's brand and design values — which set the foundation for the digital design and the strategy ahead. My role ran from high-level navigation down to detailed flows, interfaces and microcopy.</p>
+      </div>
+    </section>
+
+    <!-- Turning point -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Turning Point</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        Accessibility isn't a checklist you run at the end. Build it into the system once, and every screen that follows inherits it.
+      </p>
+      <div class="case-cols">
+        <p data-reveal><strong>The system as engine.</strong> Figma components were converted into coded components in real time with the bank's developers, documented in Storybook. Accessibility and consistency now ship by default — and future projects start with the hard part already solved, meeting the EU accessibility directive from the ground up.</p>
+        <p data-reveal><strong>One brand, two states.</strong> A particular challenge was the seamless transition from the public, logged-out site to the logged-in bank. I challenged the existing graphical profile to make that shift feel continuous — modernizing the experience while keeping the original feel intact.</p>
+      </div>
+    </section>
+
+    <!-- The work -->
+    <section class="case-section services">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Work</span>
+        <h2 class="section-title" data-reveal>Four moves</h2>
+      </div>
+      <ul class="services__list">
+        <li class="service">
+          <span class="service__index">01</span>
+          <h3 class="service__name">Internet Bank</h3>
+          <p class="service__desc">Navigation, flows, interfaces and microcopy for the logged-in bank — all built on the design system. User testing found the new navigation simple and pedagogical.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">02</span>
+          <h3 class="service__name">Design System</h3>
+          <p class="service__desc">Figma components converted to coded components in lockstep with developers, documented in Storybook — with WCAG 2.2 AA baked in.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">03</span>
+          <h3 class="service__name">Internal Tools</h3>
+          <p class="service__desc">Service design for staff — a valuation portal for agricultural-property valuers and a caseworker aid for sustainability scoring — shaped around how employees actually work.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">04</span>
+          <h3 class="service__name">Accessibility</h3>
+          <p class="service__desc">WCAG 2.2 AA across the board — meeting the EU accessibility directive and embedding inclusive practice into the organization's foundations.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Visuals -->
+    <section class="case-section">
+      <figure class="case-figure case-figure--panel" data-reveal>
+        <img src="assets/landshypotek/internet-bank.png" alt="Screens from the redesigned Landshypotek internet bank" loading="lazy" />
+      </figure>
+      <figure class="case-figure case-figure--panel" data-reveal>
+        <img src="assets/landshypotek/design-system.png" alt="Components from the Landshypotek design system" loading="lazy" />
+      </figure>
+    </section>
+
+    <!-- Results -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Results</span>
+        <h2 class="section-title" data-reveal>Built to last</h2>
+      </div>
+      <ul class="case-outcomes">
+        <li data-reveal>Meets the EU accessibility directive, with accessibility embedded in the design system</li>
+        <li data-reveal>Faster development cycles — changes ship quicker across the whole organization</li>
+        <li data-reveal>Future digital projects begin with accessibility already solved, not from scratch</li>
+        <li data-reveal>Updated navigation tested as simple and pedagogical, with positive feedback from staff</li>
+      </ul>
+
+      <blockquote class="case-quote" data-reveal>
+        <figure class="case-quote__portrait">
+          <img src="assets/landshypotek/elsa.png" alt="Elsa Tegby, Product Owner for Digital Channels at Landshypotek Bank" loading="lazy" />
+        </figure>
+        <div class="case-quote__body">
+          <p>"The design system has let us work more efficiently across the whole organization, and ship changes faster."</p>
+          <cite>Elsa Tegby — Product Owner, Digital Channels, Landshypotek Bank</cite>
+        </div>
+      </blockquote>
+    </section>
+
+    <!-- Footer / next -->
+    <footer class="footer footer--case" id="contact">
+      <span class="section-label" data-reveal>Next up</span>
+      <a href="gapminder.html" class="footer__cta" data-cursor-label="Next">
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">GAPMINDER<em>↗︎</em></span></span></span>
+      </a>
+      <div class="footer__bottom">
+        <div class="footer__col">
+          <span class="footer__label">Email</span>
+          <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Socials</span>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+            <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Local time</span>
+          <span class="footer__time" id="clock">--:--</span>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__label">©︎2026</span>
+          <span>Michel Adamek</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script type="module" src="script.js?v=12"></script>
+</body>
+</html>

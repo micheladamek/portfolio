@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michel Adamek — UI/UX Designer</title>
+  <meta name="description" content="Michel Adamek is an award-winning UI/UX designer based in Stockholm, crafting digital products people remember." />
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    try { if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__panel"></div>
+    <div class="loader__content">
+      <span class="loader__name">Michel Adamek</span>
+      <span class="loader__count">00</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" data-cursor>MA<sup>©︎</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-cursor>Work</a>
+      <a href="about.html" data-cursor>About</a>
+      <a href="#services" data-cursor>Services</a>
+      <a href="#contact" data-cursor>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" aria-label="Toggle light mode" aria-pressed="false" data-cursor></button>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-cursor>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <div class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="#work" data-cursor><span class="menu__index">01</span>Work</a>
+        <a href="about.html" data-cursor><span class="menu__index">02</span>About</a>
+        <a href="#services" data-cursor><span class="menu__index">03</span>Services</a>
+        <a href="#contact" data-cursor><span class="menu__index">04</span>Contact</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+          <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <canvas id="webgl" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="line-mask"><span class="line">UI/UX Designer — Stockholm, Sweden</span></span></p>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line">MICHEL</span></span>
+          <span class="line-mask"><span class="line">ADAMEK<em class="hero__dot">.</em></span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub"><span class="line-mask"><span class="line">Award-winning designer crafting digital</span></span><span class="line-mask"><span class="line">products people remember.</span></span></p>
+          <div class="hero__meta">
+            <span class="line-mask"><span class="line">Currently at <a href="https://www.antrop.se" target="_blank" rel="noopener" data-cursor>Antrop</a></span></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>UX Strategy <i>✦</i> Product Design <i>✦</i> UI Design <i>✦</i> Design Systems <i>✦</i> Accessibility <i>✦</i> </span><span>UX Strategy <i>✦</i> Product Design <i>✦</i> UI Design <i>✦</i> Design Systems <i>✦</i> Accessibility <i>✦</i> </span>
+      </div>
+    </div>
+
+    <!-- Selected work -->
+    <section class="work" id="work">
+      <div class="section-head">
+        <span class="section-label" data-reveal>Selected Work</span>
+        <h2 class="section-title" data-reveal>Projects that<br />moved the needle</h2>
+        <span class="section-count" data-reveal>(09 case studies)</span>
+      </div>
+
+      <div class="work__grid">
+        <a href="volvocars.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--1">
+            <div class="card__media"><img src="assets/volvocars/card.webp" alt="Volvo Cars digital experience" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">01</span>
+            <h3 class="card__title">Volvo Cars</h3>
+            <p class="card__tags">Automotive · Digital Experience</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="landshypotek.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--1">
+            <div class="card__media"><img src="assets/landshypotek/hero.jpg" alt="Landshypotek Bank internet banking" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">02</span>
+            <h3 class="card__title">Landshypotek Bank</h3>
+            <p class="card__tags">Banking · Design System · Accessibility</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="gapminder.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--2">
+            <div class="card__media"><img src="assets/Gapminder%20Worldview%20Upgrader/Graphic%20material/Images/Gapminder%20intro%20kvadrat.jpg" alt="Gapminder data visualization tools" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">03</span>
+            <h3 class="card__title">Gapminder</h3>
+            <p class="card__tags">Data Visualization · Education</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="stim.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--3">
+            <div class="card__media"><img src="assets/Stim/Graphic%20material/Stim%20intro2.jpg" alt="Stim member services" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">04</span>
+            <h3 class="card__title">Stim</h3>
+            <p class="card__tags">Music Royalties · Digital Services</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="nowo.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--4">
+            <div class="card__media"><img src="assets/Nowo/Grafiskt%20material/nowo1.png" alt="Nowo savings app" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">05</span>
+            <h3 class="card__title">Nowo</h3>
+            <p class="card__tags">Fintech · Savings App</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="skandia.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--1">
+            <div class="card__media"><img src="assets/Skandia/Graphic%20Material/skandia_5.jpg" alt="Skandia banking and insurance" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">06</span>
+            <h3 class="card__title">Skandia</h3>
+            <p class="card__tags">Banking &amp; Insurance</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="paradox.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--2">
+            <div class="card__media"><img src="assets/Paradox%20Interactive/Graphic%20material/Paradox_intro-2.jpg" alt="Paradox Interactive games platform" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">07</span>
+            <h3 class="card__title">Paradox Interactive</h3>
+            <p class="card__tags">Gaming · Commerce</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="comviq.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--3">
+            <div class="card__media"><img src="assets/Comviq/Graphic%20Material/comviq%20intro.jpg" alt="Comviq telecom experience" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">08</span>
+            <h3 class="card__title">Comviq</h3>
+            <p class="card__tags">Telecom · E-commerce</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+
+        <a href="socialstyrelsen.html" class="card" data-cursor-label="View">
+          <div class="card__visual card__visual--4">
+            <div class="card__media"><img src="assets/Socialstyrelsen/Graphic%20material/Soc%20Thumbnail.jpg" alt="Socialstyrelsen public health services" loading="lazy" /></div>
+          </div>
+          <div class="card__info">
+            <span class="card__index">09</span>
+            <h3 class="card__title">Socialstyrelsen</h3>
+            <p class="card__tags">Public Sector · Health</p>
+            <span class="card__year">↗︎</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Selected clients -->
+    <section class="clients">
+      <div class="section-head">
+        <span class="section-label" data-reveal>Selected Clients</span>
+        <h2 class="section-title" data-reveal>A few of the<br />25+ brands</h2>
+      </div>
+      <ul class="clients__list" data-reveal>
+        <li>Volvo Cars</li>
+        <li>Spotify</li>
+        <li>SJ</li>
+        <li>Skandia</li>
+        <li>Arla</li>
+        <li>Assa Abloy</li>
+        <li>Sweco</li>
+        <li>Paradox Interactive</li>
+        <li>Karolinska</li>
+        <li>Landshypotek Bank</li>
+        <li>Comviq</li>
+        <li>Nowo</li>
+        <li>Stim</li>
+        <li>Gapminder</li>
+        <li>Invest Stockholm</li>
+        <li>Stadium</li>
+        <li>Socialstyrelsen</li>
+        <li>Apoteksgruppen</li>
+        <li>Lernia</li>
+        <li>Granngården</li>
+        <li>Willhem</li>
+        <li>Hallon</li>
+        <li>Cmore</li>
+        <li>Momentum</li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="section-label" data-reveal>About</span>
+      </div>
+      <p class="about__statement" data-split>
+        I design digital products that feel as good as they look. Sixteen years in, my obsession is still the same — clarity first, delight always. Every pixel earns its place.
+      </p>
+      <div class="about__grid">
+        <div class="about__stat" data-reveal>
+          <span class="about__num">16</span>
+          <span class="about__label">Years of experience</span>
+        </div>
+        <div class="about__stat" data-reveal>
+          <span class="about__num">25+</span>
+          <span class="about__label">Brands worked with</span>
+        </div>
+        <div class="about__stat" data-reveal>
+          <span class="about__num">04</span>
+          <span class="about__label">Languages spoken</span>
+        </div>
+        <div class="about__bio" data-reveal>
+          <p>Based in Stockholm, with time spent in London. I've worked at design agencies and in-house teams, shipping products across finance, health and culture. When I'm not pushing pixels, I'm out <a href="photos.html" data-cursor>chasing light with a camera</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="section-head">
+        <span class="section-label" data-reveal>Services</span>
+        <h2 class="section-title" data-reveal>What I do</h2>
+      </div>
+      <ul class="services__list">
+        <li class="service">
+          <span class="service__index">01</span>
+          <h3 class="service__name">UX Strategy</h3>
+          <p class="service__desc">Research, audits and roadmaps that point design at the right problem.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">02</span>
+          <h3 class="service__name">Product Design</h3>
+          <p class="service__desc">End-to-end interfaces for web and mobile — from wireframe to handoff, with AI-accelerated exploration along the way.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">03</span>
+          <h3 class="service__name">UI Design</h3>
+          <p class="service__desc">Sharp, considered interfaces — typography, layout and detail that make products feel premium.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">04</span>
+          <h3 class="service__name">Design Systems</h3>
+          <p class="service__desc">Scalable component libraries and tokens that keep teams fast.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">05</span>
+          <h3 class="service__name">Accessibility</h3>
+          <p class="service__desc">WCAG 2.2 AA as the floor, not the ceiling — products that work for everyone by default.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer" id="contact">
+      <span class="section-label" data-reveal>Got a project?</span>
+      <a href="mailto:micheladamek@gmail.com" class="footer__cta" data-cursor-label="Say hej">
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">LET'S</span></span></span>
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">TALK<em>↗︎</em></span></span></span>
+      </a>
+      <div class="footer__bottom">
+        <div class="footer__col">
+          <span class="footer__label">Email</span>
+          <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Socials</span>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+            <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+            <a href="photos.html" data-cursor>Photos</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Local time</span>
+          <span class="footer__time" id="clock">--:--</span>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__label">©︎2026</span>
+          <span>Michel Adamek</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script type="module" src="script.js?v=12"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skandia — Case Study — Michel Adamek</title>
+  <meta name="description" content="Two years redesigning digital banking at Skandia — mobile app, the My Account portal, and the design system that held it all together." />
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    try { if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body class="theme-skandia">
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__panel"></div>
+    <div class="loader__content">
+      <span class="loader__name">Skandia</span>
+      <span class="loader__count">00</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo" data-cursor>MA<sup>©︎</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work" data-cursor>Work</a>
+      <a href="about.html" data-cursor>About</a>
+      <a href="index.html#services" data-cursor>Services</a>
+      <a href="index.html#contact" data-cursor>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" aria-label="Toggle light mode" aria-pressed="false" data-cursor></button>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-cursor>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <div class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="index.html#work" data-cursor><span class="menu__index">01</span>Work</a>
+        <a href="about.html" data-cursor><span class="menu__index">02</span>About</a>
+        <a href="index.html#services" data-cursor><span class="menu__index">03</span>Services</a>
+        <a href="index.html#contact" data-cursor><span class="menu__index">04</span>Contact</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+          <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Case hero -->
+    <section class="hero hero--case">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="line-mask"><span class="line">Case Study № 06 — Banking</span></span></p>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line">SKANDIA<em class="hero__dot">.</em></span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub"><span class="line-mask"><span class="line">Two years rebuilding how a bank</span></span><span class="line-mask"><span class="line">feels in your hand.</span></span></p>
+          <div class="hero__meta">
+            <span class="line-mask"><span class="line">Client — Skandia</span></span>
+            <span class="line-mask"><span class="line">Role — UX &amp; Visual Design, 2+ years</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero image -->
+    <figure class="case-figure case-figure--hero" data-reveal>
+      <img src="assets/Skandia/Graphic%20Material/skandia_4.jpg" alt="The Skandia mobile banking app" />
+    </figure>
+
+    <!-- Facts -->
+    <section class="case-facts">
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Scope</span>
+        <span class="case-fact__value">Mobile App · My Account Portal · Design System</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Domain</span>
+        <span class="case-fact__value">Banking, Insurance, Pension &amp; Funds</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Constraints</span>
+        <span class="case-fact__value">MiFID · WCAG 2.0 AA · GDPR</span>
+      </div>
+    </section>
+
+    <!-- Brief -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Brief</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        Skandia left its physical visiting centers behind and went digital-first. Which means the app and the logged-in portal stopped being channels — they became the bank.
+      </p>
+      <div class="case-cols">
+        <p data-reveal>Skandia spans loans, retirement planning, insurance, funds, stocks and banking. Going digital-first raised the stakes for every screen: the mobile app needed a new design language, and "My Account" — the logged-in heart of the bank — needed a complete overhaul from table-heavy, non-responsive layouts into a modern, responsive experience.</p>
+        <p data-reveal>The brief had a built-in tension, captured in one line from the project: make the app feel as Skandia as possible while maintaining a native app experience. Brand warmth and platform conventions, both at once — under banking regulation (MiFID, GDPR) and accessibility requirements the whole way.</p>
+      </div>
+    </section>
+
+    <!-- The work -->
+    <section class="case-section services">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Work</span>
+        <h2 class="section-title" data-reveal>Three fronts</h2>
+      </div>
+      <ul class="services__list">
+        <li class="service">
+          <span class="service__index">01</span>
+          <h3 class="service__name">Mobile App</h3>
+          <p class="service__desc">A redesign weaving Skandia's brand into native iOS and Android patterns — familiar as a bank, comfortable as an app.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">02</span>
+          <h3 class="service__name">My Account</h3>
+          <p class="service__desc">The logged-in portal rebuilt from dense tables into a responsive experience, with conversion flows optimized for private and business customers.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">03</span>
+          <h3 class="service__name">Design System</h3>
+          <p class="service__desc">A comprehensive Sketch symbols library keeping app, portal and site speaking one visual language.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Visuals -->
+    <section class="case-section">
+      <div class="case-grid">
+        <figure class="case-figure" data-reveal>
+          <img src="assets/Skandia/Graphic%20Material/App.png" alt="Skandia app screens" loading="lazy" />
+        </figure>
+        <figure class="case-figure" data-reveal>
+          <img src="assets/Skandia/Graphic%20Material/Design%20System.png" alt="Skandia design system components" loading="lazy" />
+        </figure>
+      </div>
+      <figure class="case-figure" data-reveal>
+        <img src="assets/Skandia/Graphic%20Material/Digital%20banking.png" alt="Skandia responsive digital banking" loading="lazy" />
+      </figure>
+    </section>
+
+    <!-- Results -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Results</span>
+        <h2 class="section-title" data-reveal>One bank, one language</h2>
+      </div>
+      <ul class="case-outcomes">
+        <li data-reveal>A redesigned app blending Skandia identity with native platform conventions</li>
+        <li data-reveal>My Account transformed from table-heavy pages into a modern, responsive portal</li>
+        <li data-reveal>A design system that kept two years of work — and every team after — consistent</li>
+        <li data-reveal>All of it shipped within banking regulation and accessibility requirements</li>
+      </ul>
+    </section>
+
+    <!-- Footer / next -->
+    <footer class="footer footer--case" id="contact">
+      <span class="section-label" data-reveal>Next up</span>
+      <a href="paradox.html" class="footer__cta" data-cursor-label="Next">
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">PARADOX<em>↗︎</em></span></span></span>
+      </a>
+      <div class="footer__bottom">
+        <div class="footer__col">
+          <span class="footer__label">Email</span>
+          <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Socials</span>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+            <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Local time</span>
+          <span class="footer__time" id="clock">--:--</span>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__label">©︎2026</span>
+          <span>Michel Adamek</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script type="module" src="script.js?v=12"></script>
+</body>
+</html>

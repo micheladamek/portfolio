@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stim — Case Study — Michel Adamek</title>
+  <meta name="description" content="Stim Music Room — service design that turned member research into a physical co-working space for music creators. Winner, Design S 2020." />
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    try { if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body class="theme-stim">
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__panel"></div>
+    <div class="loader__content">
+      <span class="loader__name">Stim</span>
+      <span class="loader__count">00</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo" data-cursor>MA<sup>©︎</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work" data-cursor>Work</a>
+      <a href="about.html" data-cursor>About</a>
+      <a href="index.html#services" data-cursor>Services</a>
+      <a href="index.html#contact" data-cursor>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" aria-label="Toggle light mode" aria-pressed="false" data-cursor></button>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-cursor>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <div class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="index.html#work" data-cursor><span class="menu__index">01</span>Work</a>
+        <a href="about.html" data-cursor><span class="menu__index">02</span>About</a>
+        <a href="index.html#services" data-cursor><span class="menu__index">03</span>Services</a>
+        <a href="index.html#contact" data-cursor><span class="menu__index">04</span>Contact</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+          <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Case hero -->
+    <section class="hero hero--case">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="line-mask"><span class="line">Case Study № 04 — Service Design</span></span></p>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line">STIM<em class="hero__dot">.</em></span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub"><span class="line-mask"><span class="line">Research that became a room —</span></span><span class="line-mask"><span class="line">a physical home for music creators.</span></span></p>
+          <div class="hero__meta">
+            <span class="line-mask"><span class="line">Client — Stim</span></span>
+            <span class="line-mask"><span class="line">Role — UX Research &amp; Service Design</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero image -->
+    <figure class="case-figure case-figure--hero" data-reveal>
+      <img src="assets/Stim/Graphic%20material/DSCF3740.jpg" alt="The Stim Music Room in Stockholm" />
+    </figure>
+
+    <!-- Facts -->
+    <section class="case-facts">
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Client</span>
+        <span class="case-fact__value">Stim — 90,000+ affiliated rightsholders, est. 1923</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Deliverable</span>
+        <span class="case-fact__value">Stim Music Room — co-working &amp; studios</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Recognition</span>
+        <span class="case-fact__value">Winner — Design S, Service Design 2020</span>
+      </div>
+    </section>
+
+    <!-- Brief -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Brief</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        How does a 100-year-old rights organization become an indispensable friend to up-and-coming artists? We went and asked the artists.
+      </p>
+      <div class="case-cols">
+        <p data-reveal>Stim has compensated music creators since 1923 — today it represents more than 90,000 rightsholders and publishers. But collecting royalties is a quiet kind of relationship. Stim wanted a closer one: to understand the needs and behaviors of emerging artists, and to matter to them earlier in their careers.</p>
+        <p data-reveal>The approach was classic UX with an open mind about the outcome: interviews with artists, effect mapping and idea-generation workshops with the client, user profiles and customer journey maps. Nobody decided in advance that the answer would be digital. It wasn't.</p>
+      </div>
+    </section>
+
+    <!-- Turning point -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Turning Point</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        The research pointed somewhere unexpected: what emerging artists lacked wasn't another app — it was a place.
+      </p>
+      <div class="case-cols">
+        <p data-reveal><strong>The insight.</strong> Up-and-coming creators needed studio access, industry knowledge and each other — things a screen handles poorly and a room handles beautifully.</p>
+        <p data-reveal><strong>The decision.</strong> Stim renovated a floor of its Stockholm headquarters into the Stim Music Room: a free co-working space for songwriters, composers and publishers, with two recording studios, industry know-how on tap, and the networking that happens when you put creative people in the same room.</p>
+      </div>
+    </section>
+
+    <!-- Visuals -->
+    <section class="case-section">
+      <div class="case-grid">
+        <figure class="case-figure" data-reveal>
+          <img src="assets/Stim/Graphic%20material/IMG_3114.jpg" alt="Inside the Stim Music Room" loading="lazy" />
+        </figure>
+        <figure class="case-figure" data-reveal>
+          <img src="assets/Stim/Graphic%20material/user%20journey.png" alt="Customer journey map from the research phase" loading="lazy" />
+        </figure>
+      </div>
+      <figure class="case-figure" data-reveal>
+        <img src="assets/Stim/Graphic%20material/DSCF3757.jpg" alt="Recording studio in the Stim Music Room" loading="lazy" />
+      </figure>
+    </section>
+
+    <!-- Results -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Results</span>
+        <h2 class="section-title" data-reveal>An award-winning room</h2>
+      </div>
+      <ul class="case-outcomes">
+        <li data-reveal>Stim Music Room opened — free studios, knowledge and community for members</li>
+        <li data-reveal>Winner of Design S, the Swedish Design Awards, in Service Design 2020</li>
+        <li data-reveal>Member research turned into practical, value-creating solutions — not another report</li>
+      </ul>
+
+      <blockquote class="case-quote case-quote--plain" data-reveal>
+        <div class="case-quote__body">
+          <p>"Stim Music Room shows the importance of physical meeting places in a digital world."</p>
+          <cite>From the project — and the thesis of the whole case</cite>
+        </div>
+      </blockquote>
+    </section>
+
+    <!-- Footer / next -->
+    <footer class="footer footer--case" id="contact">
+      <span class="section-label" data-reveal>Next up</span>
+      <a href="nowo.html" class="footer__cta" data-cursor-label="Next">
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">NOWO<em>↗︎</em></span></span></span>
+      </a>
+      <div class="footer__bottom">
+        <div class="footer__col">
+          <span class="footer__label">Email</span>
+          <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Socials</span>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+            <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Local time</span>
+          <span class="footer__time" id="clock">--:--</span>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__label">©︎2026</span>
+          <span>Michel Adamek</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script type="module" src="script.js?v=12"></script>
+</body>
+</html>

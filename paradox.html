@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradox Interactive — Case Study — Michel Adamek</title>
+  <meta name="description" content="Bringing one cohesive, game-like experience to Paradox Interactive's fragmented digital touchpoints — Paradox Mods, design system and beyond." />
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    try { if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body class="theme-paradox">
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__panel"></div>
+    <div class="loader__content">
+      <span class="loader__name">Paradox Interactive</span>
+      <span class="loader__count">00</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo" data-cursor>MA<sup>©︎</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work" data-cursor>Work</a>
+      <a href="about.html" data-cursor>About</a>
+      <a href="index.html#services" data-cursor>Services</a>
+      <a href="index.html#contact" data-cursor>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" aria-label="Toggle light mode" aria-pressed="false" data-cursor></button>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-cursor>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <div class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="index.html#work" data-cursor><span class="menu__index">01</span>Work</a>
+        <a href="about.html" data-cursor><span class="menu__index">02</span>About</a>
+        <a href="index.html#services" data-cursor><span class="menu__index">03</span>Services</a>
+        <a href="index.html#contact" data-cursor><span class="menu__index">04</span>Contact</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+          <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Case hero -->
+    <section class="hero hero--case">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="line-mask"><span class="line">Case Study № 07 — Gaming</span></span></p>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line">PARADOX</span></span>
+          <span class="line-mask"><span class="line">INTERACTIVE<em class="hero__dot">.</em></span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub"><span class="line-mask"><span class="line">A digital experience that feels like</span></span><span class="line-mask"><span class="line">you're already in the game.</span></span></p>
+          <div class="hero__meta">
+            <span class="line-mask"><span class="line">Client — Paradox Interactive</span></span>
+            <span class="line-mask"><span class="line">Role — UX Design, Paradox Mods</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero image -->
+    <figure class="case-figure case-figure--hero" data-reveal>
+      <img src="assets/Paradox%20Interactive/Graphic%20material/Stellaris.jpg" alt="Stellaris key art — Paradox Interactive" />
+    </figure>
+
+    <!-- Facts -->
+    <section class="case-facts">
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Scope</span>
+        <span class="case-fact__value">Paradox Mods · Design System · Visual Expression</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Client</span>
+        <span class="case-fact__value">Stockholm publisher of historical strategy games</span>
+      </div>
+      <div class="case-fact" data-reveal>
+        <span class="case-fact__label">Collaborators</span>
+        <span class="case-fact__value">Product, Engineering — and Sony &amp; Microsoft</span>
+      </div>
+    </section>
+
+    <!-- Brief -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Brief</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        Mods site, store, launcher — Paradox's digital world had grown one touchpoint at a time. The mission: make it feel like one universe, with an interface worthy of the games.
+      </p>
+      <div class="case-cols">
+        <p data-reveal>Paradox Interactive's players are devoted — the kind who mod their favorite game's characters and rewrite its story. But the digital surfaces around the games had fragmented: the mods website, the Paradox Plaza store and the launcher each going their own way. The goal was consistency with personality — a futuristic interface that feels like you're in a game.</p>
+        <p data-reveal>My focus was the Paradox Mods experience: its UX, its visual expression, and the design system underneath. The work ran through workshops and user testing — notably around Playsets, a feature letting players manage groups of mods together — in collaboration with product owners, developers, and international stakeholders including Sony and Microsoft.</p>
+      </div>
+    </section>
+
+    <!-- The work -->
+    <section class="case-section services">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Work</span>
+        <h2 class="section-title" data-reveal>Three moves</h2>
+      </div>
+      <ul class="services__list">
+        <li class="service">
+          <span class="service__index">01</span>
+          <h3 class="service__name">Paradox Mods</h3>
+          <p class="service__desc">The website experience for discovering and managing mods — designed to feel like an extension of the games themselves.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">02</span>
+          <h3 class="service__name">Playsets</h3>
+          <p class="service__desc">User-tested feature design for managing groups of mods — taming complexity players had been handling by hand.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">03</span>
+          <h3 class="service__name">Design System</h3>
+          <p class="service__desc">A Sketch symbols library and templates standardizing the visual language across touchpoints.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Visuals -->
+    <section class="case-section">
+      <figure class="case-figure" data-reveal>
+        <img src="assets/Paradox%20Interactive/Graphic%20material/PDX%20image%201.jpg" alt="Paradox Mods interface design" loading="lazy" />
+      </figure>
+    </section>
+
+    <!-- Results -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Results</span>
+        <h2 class="section-title" data-reveal>One universe</h2>
+      </div>
+      <ul class="case-outcomes">
+        <li data-reveal>A cohesive experience across Paradox's previously fragmented touchpoints</li>
+        <li data-reveal>A design system that made design work faster and new-designer onboarding easier</li>
+        <li data-reveal>Playsets shipped with player testing behind every decision</li>
+      </ul>
+    </section>
+
+    <!-- Footer / next -->
+    <footer class="footer footer--case" id="contact">
+      <span class="section-label" data-reveal>Next up</span>
+      <a href="comviq.html" class="footer__cta" data-cursor-label="Next">
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">COMVIQ<em>↗︎</em></span></span></span>
+      </a>
+      <div class="footer__bottom">
+        <div class="footer__col">
+          <span class="footer__label">Email</span>
+          <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Socials</span>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+            <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Local time</span>
+          <span class="footer__time" id="clock">--:--</span>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__label">©︎2026</span>
+          <span>Michel Adamek</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script type="module" src="script.js?v=12"></script>
+</body>
+</html>

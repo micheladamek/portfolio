@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Michel Adamek</title>
+  <meta name="description" content="Michel Adamek is a UX designer and photographer based in Sweden — sixteen years in, two crafts, one obsession: noticing what others miss." />
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    try { if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__panel"></div>
+    <div class="loader__content">
+      <span class="loader__name">About</span>
+      <span class="loader__count">00</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo" data-cursor>MA<sup>©︎</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work" data-cursor>Work</a>
+      <a href="about.html" data-cursor>About</a>
+      <a href="index.html#services" data-cursor>Services</a>
+      <a href="index.html#contact" data-cursor>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" aria-label="Toggle light mode" aria-pressed="false" data-cursor></button>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-cursor>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <div class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="index.html#work" data-cursor><span class="menu__index">01</span>Work</a>
+        <a href="about.html" data-cursor><span class="menu__index">02</span>About</a>
+        <a href="index.html#services" data-cursor><span class="menu__index">03</span>Services</a>
+        <a href="index.html#contact" data-cursor><span class="menu__index">04</span>Contact</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+          <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero hero--case">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="line-mask"><span class="line">About — UX Designer &amp; Photographer</span></span></p>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line"><span class="hero__num" data-count-to="16">16</span> YEARS,</span></span>
+          <span class="line-mask"><span class="line">TWO CRAFTS<em class="hero__dot">.</em></span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub"><span class="line-mask"><span class="line">UX designer by trade, <a href="photos.html" data-cursor>photographer</a> by</span></span><span class="line-mask"><span class="line">obsession — based in Sweden.</span></span></p>
+          <div class="hero__meta">
+            <span class="line-mask"><span class="line">Stockholm, Sweden</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro: portrait + facts -->
+    <section class="about-intro">
+      <figure class="about-intro__photo" data-reveal>
+        <img src="assets/michel-portrait.webp" alt="Michel Adamek" />
+      </figure>
+      <div class="about-intro__facts">
+        <div class="case-fact" data-reveal>
+          <span class="case-fact__label">Education</span>
+          <span class="case-fact__value">M.Sc. Socio-technical Engineering — UX &amp; HCI, Uppsala</span>
+        </div>
+        <div class="case-fact" data-reveal>
+          <span class="case-fact__label">Focus</span>
+          <span class="case-fact__value">UX &amp; UI · Product &amp; Service Design · Design Systems</span>
+        </div>
+        <div class="case-fact" data-reveal>
+          <span class="case-fact__label">Recognition</span>
+          <span class="case-fact__value">Design S Winner · Svenska Designpriset Nominee</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Short Version</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        UX and photography are two crafts I've been honing for sixteen years. They come down to the same skill: noticing what everyone else walks past.
+      </p>
+      <a class="case-learning__link case-learning__link--inset" href="photos.html" data-cursor data-reveal>See the photography ↗︎</a>
+      <div class="case-cols">
+        <p data-reveal>By trade I'm a UX designer with an engineer's education — a master's in socio-technical engineering focused on human-computer interaction. The work spans the whole arc: user research, interviews and personas, usability testing, UI design, interactive prototyping and design systems. I design to WCAG 2.2 AA as a baseline, not an afterthought, and I stay close to developers — the best handoff is a conversation, not a document, and I can have that conversation in Swedish, English or Hungarian (with conversational Spanish when a project calls for it).</p>
+        <p data-reveal>By obsession I'm a photographer — travel and street, mostly. Both crafts train the same eye: light, timing, and the patience to wait for the moment when everything lines up.</p>
+      </div>
+    </section>
+
+    <!-- On AI -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>On AI</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        Good UX was never only about pixels. It's about navigating complex organizations, aligning people's wants and needs, and working within boundaries and legacy systems — while always considering the end user.
+      </p>
+      <div class="case-cols">
+        <p data-reveal>The tools are changing fast, and standing still isn't an option — so I use AI every day: summarizing research, drafting copy, speeding up prototyping and exploration. It's a genuine accelerant, and learning to use it well is part of the craft now. What it doesn't replace is the human work that moves an organization forward — reading the room when a stakeholder gets defensive, earning trust, aligning teams who disagree, and untangling the politics and legacy that explain why things are the way they are.</p>
+        <p data-reveal>AI is also only as good as the context it's given — a company's culture, its history, the constraints and failed experiments that shaped what exists today. That picture can't be fully handed to a tool: ask it to design an app and it averages everything it's seen, landing between the best and the worst — impressive in a minute, not yet good enough for a real product. So I lean on it wherever it helps, and stay humble about the rest. Seeing exactly why, and closing that gap, is the work.</p>
+      </div>
+    </section>
+
+    <!-- How I work -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>How I Work</span>
+      </div>
+      <p class="about__statement case-lede" data-split>
+        Every project is different. A handful of things aren't.
+      </p>
+      <div class="principles">
+        <div class="principle" data-reveal>
+          <span class="principle__num">01</span>
+          <h3 class="principle__title">Frame before you solve</h3>
+          <p>The most important work happens before anything gets designed: working out what the real problem actually is. Plenty of beautifully built products still fail — because they answered the wrong question. I'd rather sit with the problem until it's clear than rush to a solution that looks finished but solves the wrong thing.</p>
+        </div>
+        <div class="principle" data-reveal>
+          <span class="principle__num">02</span>
+          <h3 class="principle__title">Constraints are the material, not the obstacle</h3>
+          <p>Budget, legacy systems, regulation, the org chart, the deadline — these aren't in the way of the design, they are the design. A lot of the work is navigating the organization itself: understanding why things are the way they are, and helping people see that design isn't a matter of taste but a way to reach a better outcome. The craft is making something good because of these constraints, not despite them.</p>
+        </div>
+        <div class="principle" data-reveal>
+          <span class="principle__num">03</span>
+          <h3 class="principle__title">The job is decisions, not deliverables</h3>
+          <p>You're there to move an organization toward a good outcome, and that happens mostly through other people. The Figma file is just the by-product. What counts is the decisions you help unblock and the agreement you build to get there — not just the pixels you push.</p>
+        </div>
+        <div class="principle" data-reveal>
+          <span class="principle__num">04</span>
+          <h3 class="principle__title">Subtraction is the senior move</h3>
+          <p>Anyone can add a feature. Knowing what to cut — steps, options, scope, the clever idea that doesn't earn its complexity — is the harder and more valuable skill, and it usually means convincing people that less will serve them better. The hard, useful word is no.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craft -->
+    <section class="case-section services">
+      <div class="section-head">
+        <span class="section-label" data-reveal>The Craft</span>
+        <h2 class="section-title" data-reveal>What I bring</h2>
+      </div>
+      <ul class="services__list">
+        <li class="service">
+          <span class="service__index">01</span>
+          <h3 class="service__name">UX Strategy</h3>
+          <p class="service__desc">Interviews, personas and usability testing — anchoring decisions in what people actually do, and aligning teams on the right problem.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">02</span>
+          <h3 class="service__name">Product Design</h3>
+          <p class="service__desc">End-to-end product work — flows and interfaces for web and mobile, from first sketch to developer handoff.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">03</span>
+          <h3 class="service__name">UI Design</h3>
+          <p class="service__desc">Interface craft proven in Figma — typography, layout and interactive prototypes that feel like the real thing.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">04</span>
+          <h3 class="service__name">Design Systems</h3>
+          <p class="service__desc">Components and tokens that keep teams consistent and fast — built to scale past the first release.</p>
+        </li>
+        <li class="service">
+          <span class="service__index">05</span>
+          <h3 class="service__name">Accessibility</h3>
+          <p class="service__desc">WCAG 2.2 AA as the floor, not the ceiling. Inclusive by default, audited by habit.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>Experience</span>
+        <h2 class="section-title" data-reveal>Where I've been</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__row" data-reveal>
+          <span class="timeline__year">2016 — Now</span>
+          <span class="timeline__org">Antrop</span>
+          <span class="timeline__role">UX Designer</span>
+        </div>
+        <div class="timeline__row" data-reveal>
+          <span class="timeline__year">2015 — 2016</span>
+          <span class="timeline__org">Comviq · Tele2</span>
+          <span class="timeline__role">Lead UX &amp; Digital Experience Manager</span>
+        </div>
+        <div class="timeline__row" data-reveal>
+          <span class="timeline__year">2013 — 2015</span>
+          <span class="timeline__org">Creuna</span>
+          <span class="timeline__role">Interaction Designer</span>
+        </div>
+        <div class="timeline__row" data-reveal>
+          <span class="timeline__year">2013</span>
+          <span class="timeline__org">Poke London</span>
+          <span class="timeline__role">UX Designer</span>
+        </div>
+        <div class="timeline__row" data-reveal>
+          <span class="timeline__year">2010 — 2013</span>
+          <span class="timeline__org">Cloud Nine</span>
+          <span class="timeline__role">UX &amp; Interaction Designer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Off duty -->
+    <section class="case-section">
+      <div class="section-head">
+        <span class="section-label" data-reveal>Off Duty</span>
+        <h2 class="section-title" data-reveal>When the laptop closes</h2>
+      </div>
+      <figure class="case-figure" data-reveal>
+        <img src="assets/DSCF2265.jpg" alt="Street photography by Michel Adamek" loading="lazy" />
+      </figure>
+      <div class="case-learnings">
+        <div class="case-learning" data-reveal>
+          <span class="case-learning__num">01</span>
+          <h3>Behind a camera</h3>
+          <p>Travel and street photography — chasing light. I'm drawn to minimal, quiet frames that hold a feeling: the kind that pull you back to a specific place and moment.</p>
+          <a class="case-learning__link" href="photos.html" data-cursor>See the photos ↗︎</a>
+        </div>
+        <div class="case-learning" data-reveal>
+          <span class="case-learning__num">02</span>
+          <h3>Sound &amp; screen</h3>
+          <p>Golden-age hip-hop on repeat — I know most of the 90s word for word. And far too many movies and shows; I can usually name the actor before you finish asking.</p>
+        </div>
+        <div class="case-learning" data-reveal>
+          <span class="case-learning__num">03</span>
+          <h3>On the court</h3>
+          <p>Tennis — the one sport I can actually claim. A childhood habit I've picked back up lately. The forehand's still the strong side; the backhand quietly went from two hands to one as the years caught up.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer--case" id="contact">
+      <span class="section-label" data-reveal>Got a project?</span>
+      <a href="mailto:micheladamek@gmail.com" class="footer__cta" data-cursor-label="Say hej">
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">SAY</span></span></span>
+        <span class="footer__cta-line"><span class="line-mask"><span class="line">HEJ<em>↗︎</em></span></span></span>
+      </a>
+      <div class="footer__bottom">
+        <div class="footer__col">
+          <span class="footer__label">Contact</span>
+          <a href="mailto:micheladamek@gmail.com" data-cursor>micheladamek@gmail.com</a>
+          <a href="tel:+46700245929" data-cursor>+46 700 24 59 29</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Socials</span>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/micheladamek/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+            <a href="https://www.linkedin.com/in/micheladamek/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__label">Local time</span>
+          <span class="footer__time" id="clock">--:--</span>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__label">©︎2026</span>
+          <span>Michel Adamek</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script type="module" src="script.js?v=12"></script>
+</body>
+</html>
